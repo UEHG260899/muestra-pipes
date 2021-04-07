@@ -70,6 +70,11 @@
                 <li>Fecha | date:'long'</li>
                 <li>Fecha | date:'dd/MM/yyyy'</li>
             </ul>
+            <hr>
+            <ul>
+                <li>Fecha | date:'long':'TIME_ZONE'</li>
+                <li>Fecha | date:'long':'TIME_ZONE':'LANGUAGE'</li>
+            </ul>
         </p-card>
     </div>
     <div class="p-col-6">
@@ -80,6 +85,11 @@
                 <li>{{ fecha | date:'short' }}</li>
                 <li>{{ fecha | date:'long' }}</li>
                 <li>{{ fecha | date:'dd/MM/yyyy' }}</li>
+            </ul>
+            <hr>
+            <ul>
+                <li>{{ fecha | date:'long':'GMT-6' }}</li>
+                <li>{{ fecha | date:'long':'GMT-6':'fr' }}</li>
             </ul>
         </p-card>
     </div>
