@@ -1,0 +1,86 @@
+<div class="text-layout">
+    <h1>Pipes Básicos</h1>
+    <p>
+        Pipes incluidos en Angular - Usualmente en el CommonModule.
+    </p>
+</div>
+
+<div class="p-grid">
+    <div class="p-col-4">
+        <p-card header="Uppercase">
+            <p>
+                Si se desea convertir un String a mayusculas se usa la variable seguido de | uppercase. Ejemplo:
+            </p>
+            <ul class="strings">
+                <li>
+                    <strong>String sin pipe:</strong> {{ nombreLower }}
+                </li>
+                <li>
+                    <strong>String con pipe:</strong> {{ nombreLower | uppercase }}
+                </li>
+            </ul>
+        </p-card>
+    </div>
+    <div class="p-col-4">
+        <p-card header="Lowercase">
+            <p>
+                Si se desea convertir un String a minusculas se usa la variable seguido de | lowercase. Ejemplo:
+            </p>
+            <ul class="strings">
+                <li>
+                    <strong>String sin pipe:</strong> {{ nombreUpper }}
+                </li>
+                <li>
+                    <strong>String con pipe:</strong> {{ nombreUpper | lowercase }}
+                </li>
+            </ul>
+        </p-card>
+    </div>
+    <div class="p-col-4">
+        <p-card header="Titlecase">
+            <p>
+                Si se desea capitalizar un String a minusculas se usa la variable seguido de | titlecase. Ejemplo:
+            </p>
+            <ul class="strings">
+                <li>
+                    <strong>String sin pipe:</strong> {{ nombreCompleto }}
+                </li>
+                <li>
+                    <strong>String con pipe:</strong> {{ nombreCompleto | titlecase }}
+                </li>
+            </ul>
+        </p-card>
+    </div>
+</div>
+
+<div class="text-layout">
+    <h1>Date | Fecha | Pipe</h1>
+    <p>
+        Pipes para mostrar las fechas
+    </p>
+</div>
+
+<div class="p-grid">
+    <div class="p-col-6">
+        <p-card>
+            <ul>
+                <li>Fecha</li>
+                <li>Fecha | date</li>
+                <li>Fecha | date:'short'</li>
+                <li>Fecha | date:'long'</li>
+                <li>Fecha | date:'dd/MM/yyyy'</li>
+            </ul>
+        </p-card>
+    </div>
+    <div class="p-col-6">
+        <p-card>
+            <ul>
+                <li>{{ fecha }}</li>
+                <li>{{ fecha | date }}</li>
+                <li>{{ fecha | date:'short' }}</li>
+                <li>{{ fecha | date:'long' }}</li>
+                <li>{{ fecha | date:'dd/MM/yyyy' }}</li>
+            </ul>
+        </p-card>
+    </div>
+</div>
