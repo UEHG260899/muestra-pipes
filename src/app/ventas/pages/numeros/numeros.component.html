@@ -6,7 +6,7 @@
 </div>
 
 <div class="p-grid">
-    <div class="p-col-4">
+    <div class="p-col-6 p-md-4">
         <p-card header="Ventas Netas"
             subheader="Ventas netas del año">
             <i class="pi pi-dollar"></i>
@@ -14,14 +14,14 @@
         </p-card>
     </div>
 
-    <div class="p-col-4">
+    <div class="p-col-6 p-md-4">
         <p-card header="Ventas Burtas"
             subheader="Ventas brutas del año">
             {{ (ventasNetas + 2000000) | currency:'MXN':'symbol-narrow':'1.4-4' }}
         </p-card>
     </div>
 
-    <div class="p-col-4">
+    <div class="p-col p-md-4">
         <p-card header="Margen de Ganancias"
             subheader="Ganancia del año">
             {{ porcentaje | percent:'2.2-2' }}
